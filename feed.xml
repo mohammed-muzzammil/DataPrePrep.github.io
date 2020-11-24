@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pendulum - Python datetimes made easy</title>
+    <description>Python datetimes made easy</description>
+    <link>https://pendulum.eustace.io/</link>
+    <atom:link href="https://pendulum.eustace.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 25 Jul 2020 18:02:23 +0200</pubDate>
+    <lastBuildDate>Sat, 25 Jul 2020 18:02:23 +0200</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Announcing Pendulum 2.1.2</title>
+        <description>&lt;p&gt;The Pendulum team is pleased to announce the immediate availability of Pendulum 2.1.2.&lt;/p&gt;
+
+&lt;p&gt;This release is a bugfix release.&lt;/p&gt;
+
+&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fixed errors when trying to build Pendulum from source (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/489&quot;&gt;#489&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 24 Jul 2020 09:12:35 +0000</pubDate>
+        <link>https://pendulum.eustace.io/blog/announcing-pendulum-2-1-2.html</link>
+        <guid isPermaLink="true">https://pendulum.eustace.io/blog/announcing-pendulum-2-1-2.html</guid>
+        
+        <category>2.x</category>
+        
+        
+        <category>releases</category>
+        
+      </item>
+    
+      <item>
+        <title>Announcing Pendulum 2.1.1</title>
+        <description>&lt;p&gt;The Pendulum team is pleased to announce the immediate availability of Pendulum 2.1.1.&lt;/p&gt;
+
+&lt;p&gt;This release is a bugfix release.&lt;/p&gt;
+
+&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fixed errors where invalid timezones were matched in &lt;code&gt;from_format()&lt;/code&gt; (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/374&quot;&gt;#374&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fixed errors when subtracting negative timedeltas (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/419&quot;&gt;#419&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fixed errors in total units computation for durations with years and months (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/482&quot;&gt;#482&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fixed an error where the &lt;code&gt;fold&lt;/code&gt; attribute was overridden when using &lt;code&gt;replace()&lt;/code&gt; (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/414&quot;&gt;#414&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fixed an error where &lt;code&gt;now()&lt;/code&gt; was not returning the correct result on DST transitions (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/483&quot;&gt;#483&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fixed inconsistent typing annotation for the &lt;code&gt;parse()&lt;/code&gt; function (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/452&quot;&gt;#452&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;locales&quot;&gt;Locales&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Added the &lt;code&gt;pl&lt;/code&gt; locale (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/459&quot;&gt;#459&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 13 Jul 2020 09:12:35 +0000</pubDate>
+        <link>https://pendulum.eustace.io/blog/announcing-pendulum-2-1-1.html</link>
+        <guid isPermaLink="true">https://pendulum.eustace.io/blog/announcing-pendulum-2-1-1.html</guid>
+        
+        <category>2.x</category>
+        
+        
+        <category>releases</category>
+        
+      </item>
+    
+      <item>
+        <title>Announcing Pendulum 2.1.0</title>
+        <description>&lt;p&gt;The Pendulum team is pleased to announce the immediate availability of Pendulum 2.1.0.&lt;/p&gt;
+
+&lt;p&gt;This release is mostly a bugfix release with some small changes that are not backwards incompatible.&lt;/p&gt;
+
+&lt;aside class=&quot;note&quot;&gt;
+&lt;p&gt;This release drops support for Python 3.4.&lt;/p&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&quot;new-features&quot;&gt;New features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Added better typing and PEP-561 compliance (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/320&quot;&gt;#320&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;is_anniversary()&lt;/code&gt; method as an alias of &lt;code&gt;is_birthday()&lt;/code&gt; (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/298&quot;&gt;#298&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;changes&quot;&gt;Changes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dropped support for Python 3.4.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;is_utc()&lt;/code&gt; will now return &lt;code&gt;True&lt;/code&gt; for any datetime with an offset of 0, similar to the behavior in the &lt;code&gt;1.*&lt;/code&gt; versions (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/295&quot;&gt;#295&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Duration.in_words()&lt;/code&gt; will now return &lt;code&gt;0 milliseconds&lt;/code&gt; for empty durations.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fixed various issues with timezone transitions for some edge cases (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/321&quot;&gt;#321&lt;/a&gt;, &lt;a href=&quot;https://github.com/sdispater/pendulum/pull/350&quot;&gt;#350&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fixed out of bound detection for &lt;code&gt;nth_of(&amp;quot;month&amp;quot;)&lt;/code&gt; (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/357&quot;&gt;#357&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fixed an error where extra text was accepted in &lt;code&gt;from_format()&lt;/code&gt; (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/372&quot;&gt;#372&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fixed a recursion error when adding time to a &lt;code&gt;DateTime&lt;/code&gt; with a fixed timezone (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/431&quot;&gt;#431&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fixed errors where &lt;code&gt;Period&lt;/code&gt; instances were not properly compared to other classes, especially &lt;code&gt;timedelta&lt;/code&gt; instances (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/427&quot;&gt;#427&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fixed deprecation warnings due to internal regexps (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/427&quot;&gt;#427&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fixed an error where the &lt;code&gt;test()&lt;/code&gt; helper would not unset the test instance when an exception was raised (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/445&quot;&gt;#445&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fixed an error where the &lt;code&gt;week_of_month&lt;/code&gt; attribute was not returning the correct value (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/446&quot;&gt;#446&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fixed an error in the way the &lt;code&gt;Z&lt;/code&gt; ISO-8601 UTC designator was not parsed as UTC (&lt;a href=&quot;https://github.com/sdispater/pendulum/pull/448&quot;&gt;#448&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;locales&quot;&gt;Locales&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Added the &lt;code&gt;nl&lt;/code&gt; locale.&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;it&lt;/code&gt; locale.&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;id&lt;/code&gt; locale.&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;nb&lt;/code&gt; locale.&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;nn&lt;/code&gt; locale.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 07 Mar 2020 09:12:35 +0000</pubDate>
+        <link>https://pendulum.eustace.io/blog/announcing-pendulum-2-1-0.html</link>
+        <guid isPermaLink="true">https://pendulum.eustace.io/blog/announcing-pendulum-2-1-0.html</guid>
+        
+        <category>2.x</category>
+        
+        
+        <category>releases</category>
+        
+      </item>
+    
+      <item>
+        <title>Pendulum 2.0.5 is out</title>
+        <description>&lt;p&gt;Bugfix release.&lt;/p&gt;
+
+&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fixed ISO week dates not being parsed properly in &lt;code&gt;from_format()&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Fixed loading of some timezones with empty posix spec.&lt;/li&gt;
+&lt;li&gt;Fixed deprecation warnings.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;locales&quot;&gt;Locales&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Added RU locale.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 03 Jul 2019 09:12:35 +0000</pubDate>
+        <link>https://pendulum.eustace.io/blog/pendulum-2-0-5-is-out.html</link>
+        <guid isPermaLink="true">https://pendulum.eustace.io/blog/pendulum-2-0-5-is-out.html</guid>
+        
+        <category>2.x</category>
+        
+        
+        <category>releases</category>
+        
+      </item>
+    
+      <item>
+        <title>Pendulum 2.0.4 is out</title>
+        <description>&lt;p&gt;Bugfix release.&lt;/p&gt;
+
+&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;from_format()&lt;/code&gt; not recognizing input strings when the specified pattern had escaped elements.&lt;/li&gt;
+&lt;li&gt;Fixed missing &lt;code&gt;x&lt;/code&gt; token for string formatting.&lt;/li&gt;
+&lt;li&gt;Fixed reading timezone files.&lt;/li&gt;
+&lt;li&gt;Added support for parsing padded 2-digit days of the month with &lt;code&gt;from_format()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;from_format()&lt;/code&gt; trying to parse escaped tokens.&lt;/li&gt;
+&lt;li&gt;Fixed the &lt;code&gt;z&lt;/code&gt; token timezone parsing in &lt;code&gt;from_format()&lt;/code&gt; to allow underscores.&lt;/li&gt;
+&lt;li&gt;Fixed C extensions build errors.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;age&lt;/code&gt; calculation for future dates.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 30 Oct 2018 09:12:35 +0000</pubDate>
+        <link>https://pendulum.eustace.io/blog/pendulum-2-0-4-is-out.html</link>
+        <guid isPermaLink="true">https://pendulum.eustace.io/blog/pendulum-2-0-4-is-out.html</guid>
+        
+        <category>2.x</category>
+        
+        
+        <category>releases</category>
+        
+      </item>
+    
+      <item>
+        <title>Pendulum 2.0.3 is out</title>
+        <description>&lt;p&gt;Bugfix release.&lt;/p&gt;
+
+&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fixed handling of &lt;code&gt;pytz&lt;/code&gt; timezones.&lt;/li&gt;
+&lt;li&gt;Fixed some formatter&amp;#39;s tokens handling.&lt;/li&gt;
+&lt;li&gt;Fixed errors on some systems when retrieving timezone from localtime files.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;diff&lt;/code&gt; methods.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;closest()/farthest()&lt;/code&gt; methods.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 30 Jul 2018 09:12:35 +0000</pubDate>
+        <link>https://pendulum.eustace.io/blog/pendulum-2-0-3-is-out.html</link>
+        <guid isPermaLink="true">https://pendulum.eustace.io/blog/pendulum-2-0-3-is-out.html</guid>
+        
+        <category>2.x</category>
+        
+        
+        <category>releases</category>
+        
+      </item>
+    
+      <item>
+        <title>Pendulum 2.0.2 is out</title>
+        <description>&lt;p&gt;Bugfix release.&lt;/p&gt;
+
+&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fixed the &lt;code&gt;weeks&lt;/code&gt; property for negative &lt;code&gt;Period&lt;/code&gt; instances.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;start_of()&lt;/code&gt; methods not setting microseconds to 0.&lt;/li&gt;
+&lt;li&gt;Fixed errors on some systems when retrieving timezone from clock files.&lt;/li&gt;
+&lt;li&gt;Fixed parsing of partial time.&lt;/li&gt;
+&lt;li&gt;Fixed parsing not raising an error for week 53 for ordinary years.&lt;/li&gt;
+&lt;li&gt;Fixed string formatting not supporting &lt;code&gt;strftime&lt;/code&gt; format.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 29 May 2018 09:12:35 +0000</pubDate>
+        <link>https://pendulum.eustace.io/blog/pendulum-2-0-2-is-out.html</link>
+        <guid isPermaLink="true">https://pendulum.eustace.io/blog/pendulum-2-0-2-is-out.html</guid>
+        
+        <category>2.x</category>
+        
+        
+        <category>releases</category>
+        
+      </item>
+    
+      <item>
+        <title>Pendulum 2.0.1 is out</title>
+        <description>&lt;p&gt;Bugfix release.&lt;/p&gt;
+
+&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fixed behavior of the &lt;code&gt;YY&lt;/code&gt; token in &lt;code&gt;from_format()&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Fixed errors on some systems when retrieving timezone from clock files.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 10 May 2018 09:12:35 +0000</pubDate>
+        <link>https://pendulum.eustace.io/blog/pendulum-2-0-1-is-out.html</link>
+        <guid isPermaLink="true">https://pendulum.eustace.io/blog/pendulum-2-0-1-is-out.html</guid>
+        
+        <category>2.x</category>
+        
+        
+        <category>releases</category>
+        
+      </item>
+    
+      <item>
+        <title>Pendulum 2.0.0 is out</title>
+        <description>&lt;p&gt;The new major version of Pendulum is finally out!&lt;/p&gt;
+
+&lt;p&gt;A lot has been modified, both internally and public API wise, and as such this version is not backwards
+compatible with the 1.x branch.&lt;/p&gt;
+
+&lt;aside class=&quot;note&quot;&gt;&lt;p&gt;
+The 1.x branch will remain maintained and will continue to receive bugfix releases.
+&lt;/p&gt;&lt;/aside&gt;
+
+&lt;p&gt;It tries to be closer to the standard library than previous versions. An example of this is
+that the constructor no longer accept anything else than &lt;code&gt;tzinfo&lt;/code&gt; objects. This is why as of this version
+the &lt;code&gt;datetime()&lt;/code&gt; helper must always be preferred over the standard constructor.&lt;/p&gt;
+
+&lt;h2 id=&quot;new-features&quot;&gt;New Features&lt;/h2&gt;
+
+&lt;h3 id=&quot;years-and-months-support-for-durations&quot;&gt;&lt;code&gt;years&lt;/code&gt; and &lt;code&gt;months&lt;/code&gt; support for durations&lt;/h3&gt;
+
+&lt;p&gt;Durations (previously intervals) now support specifying &lt;code&gt;years&lt;/code&gt; and &lt;code&gt;months&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pendulum&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dur&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pendulum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;duration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;years&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;months&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pendulum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datetime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dt2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dur&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dt2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&#39;2017-06-14T00:00:00+00:00&#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To maintain compatibility, native methods and properties will make approximations when years and months
+have been specified:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dur&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;days&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;820&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dur&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;total_seconds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;mf&quot;&gt;70848000.0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;support-for-iso-8601-duration-and-interval-parsing&quot;&gt;Support for ISO 8601 duration and interval parsing&lt;/h3&gt;
+
+&lt;p&gt;Pendulum now support parsing ISO 8601 duration and interval strings.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pendulum&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pendulum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;P1Y2M10DT2H30M&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Duration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;years&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;months&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;weeks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;days&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hours&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minutes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pendulum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;2007-03-01T13:00:00Z/2008-05-11T15:30:00Z&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Period&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;2007-03-01T13:00:00+00:00&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;2008-05-11T15:30:00+00:00&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pendulum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;2008-05-11T15:30:00Z/P1Y2M10DT2H30M&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Period&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;2008-05-11T15:30:00+00:00&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;2009-07-21T18:00:00+00:00&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pendulum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;P1Y2M10DT2H30M/2008-05-11T15:30:00Z&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Period&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;2007-03-01T13:00:00+00:00&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;2008-05-11T15:30:00+00:00&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;support-for-posix-tz-specification-for-timezones&quot;&gt;Support for POSIX TZ specification for timezones&lt;/h3&gt;
+
+&lt;p&gt;Pendulum now supports the POSIX TZ specification in tzinfo files
+to determine the DST transitions beyond the year 2038.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;#39;s take an example. In Pendulum v1, datetimes beyond year 2038
+would take the DST information of the last transition.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pendulum&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pendulum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datetime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2134&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;Europe/Paris&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&#39;2134-03-28T02:30:00+01:00&#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now, it will return the proper DST information.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pendulum&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pendulum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datetime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2134&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;Europe/Paris&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&#39;2134-03-28T03:30:00+02:00&#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;changes&quot;&gt;Changes&lt;/h2&gt;
+
+&lt;h3 id=&quot;class-names-changes&quot;&gt;Class names changes&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code&gt;Pendulum&lt;/code&gt; class has been renamed to &lt;code&gt;DateTime&lt;/code&gt;
+and the &lt;code&gt;Interval&lt;/code&gt; class has been renamed to &lt;code&gt;Duration&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;create-has-been-removed&quot;&gt;&lt;code&gt;create()&lt;/code&gt; has been removed&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code&gt;create()&lt;/code&gt; helper has been removed in favor of &lt;code&gt;datetime()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;aside class=&quot;note&quot;&gt;&lt;p&gt;
+&lt;code&gt;datetime()&lt;/code&gt; requires year, month, day arguments unlike &lt;code&gt;create()&lt;/code&gt;
+&lt;/p&gt;&lt;/aside&gt;
+
+&lt;h3 id=&quot;keywords-changes-for-parse&quot;&gt;Keywords changes for &lt;code&gt;parse()&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code&gt;strict&lt;/code&gt; keyword in &lt;code&gt;parse()&lt;/code&gt;, which initially controlled the type returned
+by the helper and since replaced by the &lt;code&gt;exact&lt;/code&gt; keyword, now control the strictness of accepted strings.&lt;/p&gt;
+
+&lt;p&gt;Basically, &lt;code&gt;strict=True&lt;/code&gt; means that &lt;code&gt;pendulum&lt;/code&gt; will not fallback on the &lt;code&gt;dateutil&lt;/code&gt; parser if it&amp;#39;s
+unable to recognize the string.&lt;/p&gt;
+
+&lt;aside class=&quot;note&quot;&gt;&lt;p&gt;
+Be aware that, unlike in the previous versions, this is no longer the default behavior
+and &lt;code&gt;pendulum&lt;/code&gt; only accepts a specific set of strings (see the &lt;a href=&quot;/docs/#parsing&quot; title=&quot;Parsing documentation&quot;&gt;parsing&lt;/a&gt; documentation).
+&lt;/p&gt;&lt;/aside&gt;
+
+&lt;h3 id=&quot;format-and-from_format-now-only-support-one-formatter&quot;&gt;&lt;code&gt;format()&lt;/code&gt; and &lt;code&gt;from_format()&lt;/code&gt; now only support one formatter&lt;/h3&gt;
+
+&lt;p&gt;The previously named &lt;code&gt;alternative&lt;/code&gt; formatter is now the only one supported
+in both &lt;code&gt;format()&lt;/code&gt; and &lt;code&gt;from_format()&lt;/code&gt; methods.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pendulum&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pendulum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datetime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1975&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;YYYY-MM-DD HH:mm:ss&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&#39;1975-12-25 14:15:16&#39;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pendulum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from_format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;1975-05-21 22&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;YYYY-MM-DD HH&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&#39;1975-05-21T22:00:00+00:00&#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;aside class=&quot;note&quot;&gt;&lt;p&gt;
+Since there is now only one formatter available, the &lt;code&gt;set_formatter()&lt;/code&gt; helper
+has been removed.
+&lt;/p&gt;&lt;/aside&gt;
+
+&lt;h3 id=&quot;at-now-supports-setting-partial-time&quot;&gt;&lt;code&gt;at()&lt;/code&gt; now supports setting partial time&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code&gt;at()&lt;/code&gt; method now supports setting partial time. &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pendulum&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pendulum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datetime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2018&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;at&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&#39;2018-01-15T10:00:00+00:00&#39;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;at&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&#39;2018-01-15T11:30:00+00:00&#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;diff_for_humans-improvements&quot;&gt;&lt;code&gt;diff_for_humans()&lt;/code&gt; improvements&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code&gt;diff_for_humans()&lt;/code&gt; method now returns &lt;code&gt;a few seconds&lt;/code&gt; when the difference in
+seconds is less than a threshold.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pendulum&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pendulum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;diff_for_humans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&#39;a few seconds ago&#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;aside class=&quot;note&quot;&gt;&lt;p&gt;
+Be aware that for locales that are not up to date, it will fallback
+on the previous behavior.
+&lt;/p&gt;&lt;/aside&gt;
+
+&lt;h3 id=&quot;other-changes&quot;&gt;Other changes&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;local&lt;/code&gt;, &lt;code&gt;utc&lt;/code&gt; and &lt;code&gt;is_dst&lt;/code&gt; are now methods rather than properties (&lt;code&gt;is_local()&lt;/code&gt;, &lt;code&gt;is_utc()&lt;/code&gt;, &lt;code&gt;is_dst()&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Changed the &lt;code&gt;repr&lt;/code&gt; of most common objects.&lt;/li&gt;
+&lt;li&gt;Improved performances of the &lt;code&gt;precise_diff()&lt;/code&gt; helper.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;set_to_string_format()/reset_to_string_format()&lt;/code&gt; methods have been removed.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;xrange()&lt;/code&gt; method of the &lt;code&gt;Period&lt;/code&gt; class and made &lt;code&gt;range()&lt;/code&gt; a generator.&lt;/li&gt;
+&lt;li&gt;New locale system which uses CLDR data for most of the translations.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 08 May 2018 09:12:35 +0000</pubDate>
+        <link>https://pendulum.eustace.io/blog/pendulum-2.0.0-is-out.html</link>
+        <guid isPermaLink="true">https://pendulum.eustace.io/blog/pendulum-2.0.0-is-out.html</guid>
+        
+        <category>2.x</category>
+        
+        
+        <category>releases</category>
+        
+      </item>
+    
+      <item>
+        <title>Pendulum 1.5.1 is out</title>
+        <description>&lt;p&gt;Bugfix release.&lt;/p&gt;
+
+&lt;h2 id=&quot;fixes&quot;&gt;Fixes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fixed &lt;code&gt;set()&lt;/code&gt; not acception the &lt;code&gt;tz&lt;/code&gt; keyword argument.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;code&gt;datetime()&lt;/code&gt; not setting the timezone to &lt;code&gt;UTC&lt;/code&gt; by default.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 24 Apr 2018 09:12:35 +0000</pubDate>
+        <link>https://pendulum.eustace.io/blog/pendulum-1-5-1-is-out.html</link>
+        <guid isPermaLink="true">https://pendulum.eustace.io/blog/pendulum-1-5-1-is-out.html</guid>
+        
+        <category>1.x</category>
+        
+        
+        <category>releases</category>
+        
+      </item>
+    
+  </channel>
+</rss>
