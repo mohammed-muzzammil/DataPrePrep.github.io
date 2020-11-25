@@ -4,7 +4,9 @@
   
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RVZHCF87P"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -177,16 +179,16 @@ import pandas as pd
 df=pd.read_excel('Book1.xlsx')
 
 # Treating missing values using Mean
-dp.treat_mean(df)   # see its soo easy
+dp.missing_values(df,'mean')   # see its soo easy
 
 # Treating missing values using Median
-dp.treat_median(df)
+dp.missing_values(df,'mean')
 
 # Treating missing values using Mode
-dp.treat_mode(df)
+dp.missing_values(df,'mode')
 
 # Treating missing values using Knn Method
-dp.treat_knn(df,1) # Here integer 1 signifies nearest neighbour 
+dp.missing_values(df,1,'knn') # Here integer 1 signifies nearest neighbour 
                    # can be 2 or 3
  
 
@@ -221,13 +223,13 @@ dp.treat_knn(df,1) # Here integer 1 signifies nearest neighbour
             </div>
             <div class="window-content">
               <pre class=""><code class="language-python"># Treat Outliers using IQR
-dp.ot_iqr(df,'column_name')
+dp.outlier_treatment(df,'column_name','iqr')
 
  # column name from which 
  # outliers will be identified
  
  # Treat Outliers using Z-Score
- dp.ot_zscore(df, 'column_name')
+ dp.outlier_treatment(df, 'column_name','zscore')
 
 </code></pre>
             </div>
@@ -250,16 +252,16 @@ dp.ot_iqr(df,'column_name')
             </div>
             <div class="window-content">
               <pre class=""><code class="language-python"># Standard Scalar
-dp.f_standardscalar(df)
+dp.feature_scaling(df,'standard_scalar')
 
 # Robust Scalar 
-dp.f_robustscalar(df) # see its one line of code
+dp.feature_scaling(df,'robust_scalar') # see its one line of code
 
 # Min Max Scalar
-dp.f_minmax(df)
+dp.feature_scaling(df,'minmax_scalar')
 
 # Max Absolute Scalar
-dp.f_maxabs(df)
+dp.feature_scaling(df,'maxabs_scalar')
   </code></pre>
             </div>
           </div>
@@ -292,10 +294,7 @@ dp.f_maxabs(df)
               </div>
             </div>
             <div class="window-content">
-              <pre class=""><code class="language-python">import datapreprep as dp
-
-dp.info(df)
-
+              <pre class=""><code class="language-python">dp.info(df)
 The Percenatge of Value Missing in Given Data is : 0.000%
 
 The Percenatge of Value Missing  in each column of  Given Data is :
@@ -307,9 +306,6 @@ State         0.0
 Salary        0.0
 z-score       0.0
 dtype: float64
-
-Shape of dataframe (Rows, Columns):  (5, 7)
-
 Data description :
         Student_Id   Marks_10   Marks_12  Marks_Grad     State     Salary  \
 count    5.000000   5.000000   5.000000    5.000000  5.000000   5.000000   
@@ -320,18 +316,6 @@ min      1.000000  45.000000  65.000000   56.000000  0.000000  10.000000
 50%      3.000000  54.000000  68.000000   67.000000  1.000000  14.000000   
 75%      4.000000  89.000000  87.000000   84.000000  1.000000  18.000000   
 max      5.000000  89.000000  88.000000   84.000000  1.000000  21.000000   
-
-            z-score  
-count  5.000000e+00  
-mean  -1.776357e-16  
-std    1.000000e+00  
-min   -1.003062e+00  
-25%   -5.772339e-01  
-50%   -5.772339e-01  
-75%    1.078765e+00  
-max    1.078765e+00  
-The Categorical Data we have : []
-
 Shape of dataframe (Rows, Columns):  (5, 7)
 
 </code></pre>
@@ -348,6 +332,7 @@ Shape of dataframe (Rows, Columns):  (5, 7)
   <div class="container text-center">
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 p-b-60 text-center">
+	  <br><br><br><br><br>
         <h1 class="m-t-5 m-b-20">Getting Started</h1>
         <pre class="code-title"><code class="language-text">pip install datapreprep</code></pre>
         <p><i class="fa fad fa-angle-down fa-3x"></i></p>
