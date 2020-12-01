@@ -15,6 +15,8 @@
 
   gtag('config', 'G-4RVZHCF87P');
 </script>
+
+
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
     <title>DataPrePrep</title>
@@ -312,12 +314,6 @@ count    5.000000   5.000000   5.000000    5.000000  5.000000   5.000000
 mean     3.000000  66.200000  75.200000   69.600000  0.800000  15.000000   
 std      1.581139  21.135279  11.300442   13.831124  0.447214   4.472136   
 min      1.000000  45.000000  65.000000   56.000000  0.000000  10.000000   
-25%      2.000000  54.000000  68.000000   57.000000  1.000000  12.000000   
-50%      3.000000  54.000000  68.000000   67.000000  1.000000  14.000000   
-75%      4.000000  89.000000  87.000000   84.000000  1.000000  18.000000   
-max      5.000000  89.000000  88.000000   84.000000  1.000000  21.000000   
-Shape of dataframe (Rows, Columns):  (5, 7)
-
 </code></pre>
             </div>
           </div>
@@ -326,6 +322,54 @@ Shape of dataframe (Rows, Columns):  (5, 7)
     </div>
   </div>
 </section>
+<br/> <br/><br/><br/>
+
+<!-- BEGIN INTRO CONTENT -->
+<section id="pendulum-section">
+  <div class="container">
+    <div class="md-p-l-20 md-p-r-20 xs-no-padding">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 p-t-45 text-center">
+          <h6 class="block-title hint-text m-b-0">Better Data Visualization</h6>
+          <h1 class="m-t-25 emphasis">Data Visualization</h1>
+          <p class="m-t-30">Visualize your data with Bar Chart, heat map and much more <span class="emphasis-2"></span></p>
+          <p class="hint-text font-arial small">Just pass a dataframe and its done
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 text-center">
+          <div class="browser-window s-50">
+            <div class="top-bar">
+              <div class="circles">
+                <div class="circle circle-red"></div>
+                <div class="circle circle-yellow"></div>
+                <div class="circle circle-green"></div>
+              </div>
+            </div>
+            <div class="window-content">
+              <pre class=""><code class="language-python">import datapreprep as dp
+# importing dataframe
+df=pd.read_excel('Book1.xlsx')
+
+# Visualize using Bar Chart
+dp.bar(df)   # see its soo easy
+
+# Using Matrix
+dp.matrix(df)
+
+# Using Heat map
+dp.heatmap(df)
+</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- BEGIN CONTENT SECTION -->
 <!-- BEGIN INTRO CONTENT -->
 <section id="launch" class="p-b-60 p-t-60 no-overflow">
