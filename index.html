@@ -192,8 +192,15 @@ dp.missing_values(df,'mode')
 # Treating missing values using Knn Method
 dp.missing_values(df,1,'knn') # Here integer 1 signifies nearest neighbour 
                    # can be 2 or 3
- 
+				   
+# Treating missing values using End of Distribution
+dp.missing_values(df,'eod')
 
+# Treating missing values using random sample imputation
+dp.missing_values(df,'randomsampleimputation')
+
+# Treating missing values using Capture NaN
+dp.missing_values(df,'capturenan')
 
 
 </code></pre>
